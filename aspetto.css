@@ -156,9 +156,8 @@
            text-align: left:
         }
 
-        .nav-links a:hover {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
+        .nav-links li:{
+            width:100%;
         }
 
         /* ============================================
