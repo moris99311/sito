@@ -401,13 +401,12 @@
 @media (max-width: 767px) {
   /* Header/nav */
   .menu-toggle {
-    display: block;
+    display: block !important;
     position: absolute;
     right: var(--spacing-sm);
     top: 50%;
     transform: translateY(-50%);
     z-index: 2101;
-    touch-action: manipulation; /* migliore risposta al tocco */
   }
 
   .nav-links {
