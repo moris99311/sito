@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nomeeee ristorante - Menù</title>
+    <title>Nome ristorante - Menù</title>
     <link rel="stylesheet" href="aspetto.css" />
-    <script src="app.js?v=20251018_1" defer></script>
-   
   </head>
 
 <body>
@@ -17,12 +15,12 @@
     <header>
         <nav>
             <div class="logo">NOME RISTORANTE</div>
-            <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="main-menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links" >
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#storia">La Nostra Storia</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -67,24 +65,11 @@
          SEZIONE MENU
          ============================================ -->
          
-
-
     <section id="menu">
         <div class="container">
             <h2 class="section-title">Il Nostro Menu</h2>
             
             <!-- Antipasti -->
-        <div class="menu-item">
-          <img src="path/immagine-piatto.jpg" alt="Nome piatto" class="menu-item-image">
-              <div class="menu-item-info">
-                  <div class="menu-item-name">Nome del Piatto</div>
-                    <div class="menu-item-description">
-                      Ingredienti: pomodoro, mozzarella, basilico<br>
-            <strong>Allergeni:</strong> lattosio, glutine
-        </div>
-    </div>
-    <div class="menu-item-price">€12,00</div>
-</div>
             <div class="menu-category">
                 <h3>🍴 Antipasti</h3>
                 <div class="menu-grid">
@@ -703,7 +688,4 @@
         </div>
 </footer>
 </body>
-
 </html>
-
-
