@@ -1,9 +1,9 @@
  
         // Toggle menu mobile
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('.nav-links');
 
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
 
@@ -37,4 +37,6 @@
         document.querySelectorAll('.menu-item').forEach(item => {
             observer.observe(item);
         });
+
+
     
