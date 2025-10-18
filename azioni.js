@@ -1,5 +1,3 @@
- 
-        // Toggle menu mobile
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
@@ -37,4 +35,3 @@
         document.querySelectorAll('.menu-item').forEach(item => {
             observer.observe(item);
         });
-    
