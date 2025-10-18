@@ -3,9 +3,9 @@
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('.nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+         document.querySelector('.menu-toggle').onclick = function() {
+         document.querySelector('.nav-links').classList.toggle('active');
+        };
 
         // Chiudi menu quando clicco su un link (per mobile)
         const links = document.querySelectorAll('.nav-links a');
