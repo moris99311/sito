@@ -270,17 +270,15 @@
         }
          /* Card menu in grid: immagine | info | prezzo */
         .menu-item {
-             background-color: #fff;
-             padding: var(--spacing-md);
-             border-radius: 10px;
-             box-shadow: var(--shadow);
-             transition: var(--transition);
-
-             display: grid;
-             grid-template-columns: 120px 1fr auto; /* sinistra | centro | destra */
-             grid-auto-rows: auto;
-             gap: var(--spacing-sm);
-             align-items: start;
+            background-color: white;
+            padding: var(--spacing-md);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
         }
 
         .menu-item:hover {
