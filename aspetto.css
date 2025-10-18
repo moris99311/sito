@@ -472,16 +472,18 @@
             outline: 2px solid var(--primary-color);
             outline-offset: 2px;
         }
-/* Evita overflow orizzontale su nomi/descrizioni */
-.menu-item-name,
-.menu-item-description {
-  overflow-wrap: anywhere;
+body { 
+           word-break: break-word; overflow-wrap: anywhere;
+}
+.menu-item-name, .menu-item-description { 
+           overflow-wrap: anywhere;
 }
 
-/* Immagini responsive globali */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+html, body {
+           overflow-x: hidden; 
 }
+body { 
+           overscroll-behavior-x: contain; 
+}
+
 
