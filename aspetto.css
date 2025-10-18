@@ -288,9 +288,7 @@
 
         /* Blocco info centrale */
         .menu-item-info {
-            display: grid;
-            grid-template-rows: auto auto auto; /* nome, descrizione, allergeni */
-            gap: var(--spacing-xs);
+             flex: 1;
         }
        /*posizione titolo piatto*/
         .menu-item-name {
