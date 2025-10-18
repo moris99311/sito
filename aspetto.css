@@ -309,6 +309,25 @@
             font-size: 1.2rem;
             white-space: nowrap;
         }
+       .menu-item-media img {
+             width: 96px;
+             height: 96px;
+             object-fit: cover;
+             border-radius: 8px;
+             display: block;
+           }
+       .menu-item-media { 
+                  grid-area: media; 
+       }
+       .menu-item-info  { 
+                  grid-area: info;  min-width: 0;
+       }
+       .menu-item-price { 
+                  grid-area: price; 
+                  white-space: nowrap;
+                  align-self: start; 
+       }
+
 
         /* ============================================
            FOOTER
