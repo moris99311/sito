@@ -399,9 +399,7 @@
            Breakpoint: max 767px
            ============================================ */
   @media (max-width: 2000px) {
-  .menu-toggle { display: block !important; background: blue !important;}
-}
-        nav{
+      nav{
             min-height: 60px; ;
            }
         .menu-toggle {
