@@ -724,6 +724,19 @@
         // Osserva tutti i menu items per animarli
         document.querySelectorAll('.menu-item').forEach(item => {
             observer.observe(item);
-        });</script>
+        });
+
+  /*banner per cookie tecnici*/
+document.addEventListener('DOMContentLoaded', function() {
+  if (!localStorage.getItem('cookieAccepted')) {
+    document.getElementById('cookieBanner').style.display = 'block';
+  }
+  document.getElementById('acceptCookies').addEventListener('click', function() {
+    localStorage.setItem('cookieAccepted', 'true');
+    document.getElementById('cookieBanner').style.display = 'none';
+  });
+});
+
+</script>
 </body>
 </html>
