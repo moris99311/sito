@@ -398,48 +398,50 @@
            RESPONSIVE DESIGN - MOBILE
            Breakpoint: max 767px
            ============================================ */
-        @media (max-width: 767px) {
-                 .menu-toggle {
-    display: block;
-    position: absolute;
-    right: var(--spacing-sm);
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1101;
-  }
+   @media (max-width: 767px) {
+        nav{
+            position: relative;
+           }
+        .menu-toggle {
+            position: absolute;
+            right: var(--spacing-sm);
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1101;
+         }
 
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-light);
-    margin: 5px 0;
-    border-radius: 2px;
-    transition: var(--transition);
-  }
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-light);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: var(--transition);
+        }
 
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background-color: var(--secondary-color);
-    flex-direction: column;
-    gap: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: var(--transition);
-    z-index: 1100;
-  }
+        .nav-links {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background-color: var(--secondary-color);
+            flex-direction: column;
+            gap: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+            z-index: 1100;
+       }
 
-  .nav-links.active {
-    max-height: 400px;
-    padding: var(--spacing-sm) 0;
-  }
+         .nav-links.active {
+            max-height: 400px;
+            padding: var(--spacing-sm) 0;
+        }
 
-  .nav-links li {
-    width: 100%;
-  }
+         .nav-links li {
+            width: 100%;
+         }
     /* modifica del menù da mobile */
         .menu-item {
         background-color: rgba(255, 255, 255, 0.95);
