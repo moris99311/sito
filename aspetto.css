@@ -270,16 +270,27 @@
         }
          /* Card menu in grid: immagine | info | prezzo */
         .menu-item {
-            background-color: white;
-            padding: var(--spacing-md);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+             background-color: #fff;
+             padding: var(--spacing-md);
+             border-radius: 10px;
+             box-shadow: var(--shadow);
+             transition: var(--transition);
+
+            display: grid;
+            grid-template-columns: 120px 1fr auto; /* sinistra | centro | destra */
+            grid-auto-rows: auto;
             gap: var(--spacing-sm);
+            align-items: start;
         }
+         /* Immagine sinistra */
+        .menu-item-image {
+             width: 120px;
+             height: 120px;
+             border-radius: 8px;
+             object-fit: cover;
+             border: 2px solid var(--accent-color);
+        }
+
 
         .menu-item:hover {
             transform: translateY(-5px);
@@ -288,7 +299,9 @@
 
         /* Blocco info centrale */
         .menu-item-info {
-             flex: 1;
+               display: grid;
+               grid-template-rows: auto auto auto; /* nome, descrizione, allergeni */
+               gap: var(--spacing-xs);
         }
        /*posizione titolo piatto*/
         .menu-item-name {
@@ -296,6 +309,7 @@
             color: var(--secondary-color);
             margin: 0;
             font-size: 1.1rem;
+             line-height: 1.3;
         }
 
         /* Descrizione */
@@ -303,6 +317,7 @@
             color: #666;
             font-size: 0.95rem;
             margin-bottom: 0;
+            line-height: 1.5;
        
         }
       /* Prezzo a destra, non va a capo */
@@ -311,6 +326,7 @@
             font-weight: bold;
             font-size: 1.2rem;
             white-space: nowrap;
+            align-self: start; /* top-align */
         }
 
         /* ============================================
