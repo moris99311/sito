@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nome ristorante - Menù</title>
     <link rel="stylesheet" href="aspetto.css" />
+    <style>
+/* DEBUG: forza icona hamburger sempre visibile e sopra a tutto */
+header { position: sticky; top:0; z-index: 3000; }
+nav { position: relative; z-index: 3001; min-height: 64px; }
+.menu-toggle { 
+  display: block !important;
+  position: fixed !important; 
+  right: 16px !important; 
+  top: 16px !important; 
+  width: 44px; height: 44px;
+  background: #222 !important; 
+  border-radius: 6px;
+  z-index: 5000 !important;
+}
+.menu-toggle span { 
+  background: #fff !important; 
+  display:block; width: 24px; height:3px; 
+  margin: 6px auto; border-radius:2px;
+}
+</style>
   </head>
 
 <body>
@@ -701,36 +721,6 @@
         </div>
 </footer>
 </body>
-  <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if (!menuToggle || !navLinks) return;
-
-  menuToggle.setAttribute('type','button');
-  menuToggle.setAttribute('aria-expanded','false');
-
-  const openMenu = () => { navLinks.classList.add('active'); menuToggle.setAttribute('aria-expanded','true'); };
-  const closeMenu = () => { navLinks.classList.remove('active'); menuToggle.setAttribute('aria-expanded','false'); };
-  const toggleMenu = () => (navLinks.classList.contains('active') ? closeMenu() : openMenu());
-
-  // Click standard
-  menuToggle.addEventListener('click', toggleMenu, { passive: true });
-
-  // Fallback iOS: touchend con preventDefault per garantire il toggle
-  menuToggle.addEventListener('touchend', function (e) {
-    e.preventDefault();
-    toggleMenu();
-  }, { passive: false });
-
-  // Chiudi al click su voce, solo mobile
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.addEventListener('click', function () {
-      if (window.innerWidth <= 767) closeMenu();
-    }, { passive: true });
-  });
-});
-</script>
 
 </html>
 
