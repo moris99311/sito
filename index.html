@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nome ristorante - Menù</title>
+    <link rel="stylesheet" href="aspetto.css" />
+  </head>
+
+<body>
+
+    <!-- ============================================
+         HEADER CON NAVIGAZIONE STICKY
+         ============================================ -->
+    <header>
+        <nav>
+            <div class="logo">NOME RISTORANTE</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#storia">La Nostra Storia</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pizze">Pizze</a></li>
+                <li><a href="#bevande">Bevande</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Benvenuti ...</h1>
+            <p>un piccolo sottotitolo</p>
+            <a href="#menu" class="cta-button">Scopri il Menu</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEZIONE STORIA
+         ============================================ -->
+    <section id="storia">
+        <div class="container">
+            <h2 class="section-title">La Nostra Storia</h2>
+            <div class="storia-content">
+                <div class="storia-image">
+                    [Immagine del ristorante]
+                </div>
+                <div class="storia-text">
+                    <p>
+                            Qua la storia del ristorante
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEZIONE MENU
+         ============================================ -->
+         
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title">Il Nostro Menu</h2>
+            
+            <!-- Antipasti -->
+            <div class="menu-category">
+                <h3>🍴 Antipasti</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Bruschetta Classica</div>
+                            <div class="menu-item-description">
+                              descrizione piatto
+                            </div>
+                        </div>
+                        <div class="menu-item-price">prezzo</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               
+                            </div>
+                        </div>
+                        <div class="menu-item-price">prezzo</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               
+                            </div>
+                        </div>
+                        <div class="menu-item-price">prezzo</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primi Piatti -->
+            <div class="menu-category">
+                <h3>🍝 Primi Piatti</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondi Piatti -->
+            <div class="menu-category">
+                <h3>🥩 Secondi Piatti</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contorni -->
+            <div class="menu-category">
+                <h3>🥗 Contorni</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                              ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dolci -->
+            <div class="menu-category">
+                <h3>🍰 Dolci</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEZIONE PIZZE
+         ============================================ -->
+    <section id="pizze" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Le Nostre Pizze</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto var(--spacing-lg);">
+               descrizioni pizze, farine, allergeni, ecc.
+            </p>
+
+            <div class="menu-category">
+                <h3>🍕 Pizze Classiche</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">margherita</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍕 Pizze Speciali</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEZIONE BEVANDE
+         ============================================ -->
+    <section id="bevande">
+        <div class="container">
+            <h2 class="section-title">Bevande</h2>
+
+            <div class="menu-category">
+                <h3>🍷 Vini</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🍺 Birre</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>🥤 Bibite e Bevande Analcoliche</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                L...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>☕ Caffetteria</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">...</div>
+                            <div class="menu-item-description">
+                                ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Amaro / Limoncello</div>
+                            <div class="menu-item-description">
+                               ...
+                            </div>
+                        </div>
+                        <div class="menu-item-price">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER CON CONTATTI
+         ============================================ -->
+    <footer id="contatti">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>📍 Via blabla, 123</p>
+                <p>.... - Milano, Italia</p>
+                <p>📞 Tel: +39 ...</p>
+                <p>✉️ info@maildellocale.it</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Orari di Apertura</h3>
+                <p>Martedì - Domenica</p>
+                <p>Pranzo: 12:00 - 15:00</p>
+                <p>Cena: 19:00 - 23:00</p>
+                <p><em>Lunedì chiuso</em></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Seguici</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                </div>
+                <p style="margin-top: 2rem;">
+                    © 2025 NOME RISTORANTE<br>
+                    Tutti i diritti riservati
+                </p>
+            </div>
+        </div>
+</footer>
+<script>        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Chiudi menu quando clicco su un link (per mobile)
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 767) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Smooth scroll già gestito da CSS (scroll-behavior: smooth)
+
+        // Animazione fade-in per gli elementi quando entrano nel viewport
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Osserva tutti i menu items per animarli
+        document.querySelectorAll('.menu-item').forEach(item => {
+            observer.observe(item);
+        });</script>
+</body>
+</html>
