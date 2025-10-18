@@ -1,54 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+ 
+        // Toggle menu mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
-  if (!menuToggle || !navLinks) return;
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
 
-  // Imposta attributi di accessibilitàaa
-  navLinks.id = navLinks.id || 'main-menu';
-  menuToggle.setAttribute('aria-controls', navLinks.id);
-  menuToggle.setAttribute('aria-expanded', 'false');
-  menuToggle.setAttribute('type', 'button');
+        // Chiudi menu quando clicco su un link (per mobile)
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 767) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
 
-  // Funzioni apertura/chiusura menu
-  function openMenu() {
-    navLinks.classList.add('active');
-    menuToggle.setAttribute('aria-expanded', 'true');
-  }
+        // Smooth scroll già gestito da CSS (scroll-behavior: smooth)
 
-  function closeMenu() {
-    navLinks.classList.remove('active');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  }
+        // Animazione fade-in per gli elementi quando entrano nel viewport
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-  function toggleMenu() {
-    if (navLinks.classList.contains('active')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  }
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
 
-  // Usa solo l'evento click per toggle
-  menuToggle.addEventListener('click', function(e) {
-    toggleMenu();
-  });
-
-  // Chiudi menu se clicchi su un link interno solo in mobile
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function() {
-      if (window.innerWidth <= 767) {
-        closeMenu();
-      }
-    });
-  });
-
-  // Chiudi menu con ESC per accessibilità
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-      closeMenu();
-      menuToggle.focus();
-    }
-  });
-});
-
+        // Osserva tutti i menu items per animarli
+        document.querySelectorAll('.menu-item').forEach(item => {
+            observer.observe(item);
+        });
+    
