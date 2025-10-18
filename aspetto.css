@@ -398,26 +398,21 @@
    RESPONSIVE DESIGN - MOBILE
    Breakpoint: max 767px
    ============================================ */
-@media (max-width: 767px) {
-  /* Header/nav */
-  .menu-toggle {
-    display: block !important;
-    position: absolute;
-    right: var(--spacing-sm);
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2101;
-  }
+header { position: sticky; top:0; z-index: 2000; }
+nav { position: relative; z-index: 2001; }
 
+@media (max-width: 767px) {
   .nav-links {
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-
-    display: flex;
+    left: 0; right: 0;
+    background: var(--secondary-color);
     flex-direction: column;
-    background-color: var(--secondary-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease, padding .3s ease;
+    z-index: 2100;
+  }
 
     /* Pannello chiuso di default */
     max-height: 0;
