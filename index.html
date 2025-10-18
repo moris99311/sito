@@ -701,4 +701,37 @@
         </div>
 </footer>
 </body>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (!menuToggle || !navLinks) return;
+
+  menuToggle.setAttribute('type','button');
+  menuToggle.setAttribute('aria-expanded','false');
+
+  const openMenu = () => { navLinks.classList.add('active'); menuToggle.setAttribute('aria-expanded','true'); };
+  const closeMenu = () => { navLinks.classList.remove('active'); menuToggle.setAttribute('aria-expanded','false'); };
+  const toggleMenu = () => (navLinks.classList.contains('active') ? closeMenu() : openMenu());
+
+  // Click standard
+  menuToggle.addEventListener('click', toggleMenu, { passive: true });
+
+  // Fallback iOS: touchend con preventDefault per garantire il toggle
+  menuToggle.addEventListener('touchend', function (e) {
+    e.preventDefault();
+    toggleMenu();
+  }, { passive: false });
+
+  // Chiudi al click su voce, solo mobile
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', function () {
+      if (window.innerWidth <= 767) closeMenu();
+    }, { passive: true });
+  });
+});
+</script>
+
 </html>
+
+
