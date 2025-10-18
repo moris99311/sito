@@ -450,18 +450,33 @@
            RESPONSIVE DESIGN - MOBILE
            Breakpoint: max 767px
            ============================================ */
-        @media (max-width: 767px) {
-           .menu-item {
-                      display: grid;
-                      grid-template-columns: 96px 1fr auto;
-                      grid-template-areas: "media info price";
-                      gap: var(--spacing-sm);
-                        }
-  /* Il prezzo resta allineato a destra e in alto */
-           .menu-item-price { 
-                                 align-self: start; 
-                           }
-        }
+/* Mobile-first: mostra hamburger e nascondi link */
+.menu-toggle { display: inline-block; }
+.nav-links {
+  position: fixed;
+  inset: 60px 0 0 0;        /* sotto l'header */
+  background: var(--secondary-color);
+  flex-direction: column;
+  padding: var(--spacing-md);
+  gap: var(--spacing-sm);
+  transform: translateY(-100%);
+  transition: transform .3s ease;
+}
+/* Stato aperto (aggiunto via JS o :target) */
+.nav-open .nav-links { transform: translateY(0); }
+
+/* Nascondi su desktop e ripristina layout orizzontale */
+@media (min-width: 768px) {
+  .menu-toggle { display: none; }
+  .nav-links {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    gap: var(--spacing-md);
+  }
+}
 
         /* ============================================
            RESPONSIVE DESIGN - DESKTOP LARGE
@@ -501,18 +516,5 @@
             outline: 2px solid var(--primary-color);
             outline-offset: 2px;
         }
-body { 
-           word-break: break-word; overflow-wrap: anywhere;
-}
-.menu-item-name, .menu-item-description { 
-           overflow-wrap: anywhere;
-}
-
-html, body {
-           overflow-x: hidden; 
-}
-body { 
-           overscroll-behavior-x: contain; 
-}
 
 
