@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- Per cookie tecnici -->
 <div id="cookieBanner" style="position: fixed; bottom: 0; width: 100%; background: var(--secondary-color); color: var(--text-light); padding: 10px; text-align: center; z-index: 10000; display:none;">
   Questo sito utilizza cookie tecnici per migliorare la navigazione. Leggi la <a href="privacy.html" style="color: var(--primary-color); text-decoration: underline;">Privacy Policy</a>.
   <button id="acceptCookies" style="margin-left: 15px; background-color: var(--primary-color); border: none; padding: 5px 15px; cursor: pointer;">Chiudi</button>
@@ -855,7 +856,7 @@
         });
 
 
-
+       /*Per cookie tecnici*/
         document.addEventListener('DOMContentLoaded', function() {
   if (!localStorage.getItem('cookieAccepted')) {
     document.getElementById('cookieBanner').style.display = 'block';
@@ -865,6 +866,7 @@
     document.getElementById('cookieBanner').style.display = 'none';
   });
 });
+        
     </script>
     </body>
 </html>
