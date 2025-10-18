@@ -169,21 +169,18 @@
            Prima impressione impattante con CTA
            ============================================ */
            .hero {
-                background:
-    linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23c7a17a" width="1200" height="600"/></svg>');
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll; /* niente fixed su mobile iOS */
-  min-height: 70vh;   /* fallback */
-  min-height: 70svh;  /* iOS small viewport */
-  min-height: 70dvh;  /* viewport dinamico moderno */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--text-light);
-  padding: var(--spacing-lg) var(--spacing-sm);
+            background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23c7a17a" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: var(--spacing-lg) var(--spacing-sm);
            }
 
 
