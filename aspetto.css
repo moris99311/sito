@@ -398,7 +398,9 @@
            RESPONSIVE DESIGN - MOBILE
            Breakpoint: max 767px
            ============================================ */
-   @media (max-width: 767px) {
+  @media (max-width: 2000px) {
+  .menu-toggle { display: block !important; background: blue !important;}
+}
         nav{
             min-height: 60px; ;
            }
