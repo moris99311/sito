@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (!menuToggle || !navLinks) return;
 
-  // Imposta attributi di accessibilità
+  // Imposta attributi di accessibilitàaa
   navLinks.id = navLinks.id || 'main-menu';
   menuToggle.setAttribute('aria-controls', navLinks.id);
   menuToggle.setAttribute('aria-expanded', 'false');
