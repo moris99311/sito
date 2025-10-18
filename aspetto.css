@@ -312,11 +312,10 @@
         }
       /* Prezzo a destra, non va a capo */
         .menu-item-price {
-           color: var(--primary-color);
-           font-weight: bold;
-           font-size: 1.2rem;
-           white-space: nowrap;
-           align-self: start; /* top-align */
+  display: grid;
+  grid-template-columns: 120px 1fr auto; /* img | info | prezzo */
+  gap: var(--spacing-sm);
+  align-items: start;
         }
 
         /* ============================================
