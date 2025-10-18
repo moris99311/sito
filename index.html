@@ -816,6 +816,13 @@
          JAVASCRIPT PER INTERATTIVITÀ
          ============================================ -->
     <script>
+          (function () {
+            const setAppH = () => {
+             document.documentElement.style.setProperty('--app-h', window.innerHeight + 'px');
+        };
+              window.addEventListener('resize', setAppH);
+              setAppH();
+  })();
         // Toggle menu mobile
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
