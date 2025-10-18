@@ -398,6 +398,8 @@
            RESPONSIVE DESIGN - MOBILE
            Breakpoint: max 767px
            ============================================ */
+.menu-toggle { display: block !important; background: yellow !important;}
+
    @media (max-width: 767px) {
         nav{
             position: relative;
