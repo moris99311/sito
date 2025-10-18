@@ -6,21 +6,88 @@
   <title>Privacy Policy - Nome Ristorante</title>
   <style>
     body {
-      font-family: Arial, sans-serif; 
-      margin: 2rem; 
-      background-color: #f9f6f3; 
-      color: #333;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #2c1810;
-    }
-    a {
-      color: #c7a17a;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+     .back-btn {
+  display: inline-block;
+  background-color: #c7a17a;
+  color: #2c1810;
+  border: none;
+  border-radius: 30px;
+  padding: 0.65rem 1.8rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(44,24,16,0.09);
+  transition: all 0.25s ease;
+}
+.back-btn:hover {
+  background-color: #e8d5c4;
+  color: #c7a17a;
+  box-shadow: 0 8px 18px rgba(44,24,16,0.18);
+  transform: translateY(-2px);
+}
+
+/* Extra - Layout privacy box */
+body {
+  background-color: #f9f6f3;
+  color: #333;
+}
+
+/* Card effetto per privacy policy */
+.privacy-container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  padding: 2.2rem 2rem 1.2rem 2rem;
+  box-shadow: 0 8px 32px rgba(44,24,16,0.06);
+  border: 1px solid #e8d5c4;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  color: #c7a17a;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  color: #2c1810;
+  font-size: 1.3rem;
+  margin-top: 2.1rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #c7a17a;
+  padding-left: 0.6rem;
+}
+
+/* Paragrafi */
+p {
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+
+/* Link */
+a {
+  color: #c7a17a;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #e8d5c4;
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .privacy-container {
+    padding: 1.3rem 0.7rem 0.8rem 0.7rem;
+  }
+  h1 { font-size: 1.35rem; }
+  h2 { font-size: 1rem; }
+}
+
     }
   </style>
 </head>
@@ -45,5 +112,11 @@
   
   <h2>Aggiornamenti della policy</h2>
   <p>Ci riserviamo il diritto di aggiornare questa Privacy Policy in qualsiasi momento. Si consiglia di consultarla periodicamente.</p>
+
+<button class="back-btn" onclick="window.location.href='index.html'">
+  ← Torna alla Home
+</button>
+
+  
 </body>
 </html>
