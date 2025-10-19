@@ -26,13 +26,65 @@
             <div class="logo">NOME RISTORANTE</div>
 
           <!-- pulsatnte per switch index in inglese -->
-          <nav>
-                 <ul class="language-switcher">
-                 <li><a href="index.html" lang="it" hreflang="it" aria-label="Italiano">IT</a></li>
-                 <li><a href="index-en.html" lang="en" hreflang="en" aria-label="English">EN</a></li>
-                 </ul>
-         </nav>
+          <!-- Inserisci nel <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 
+<nav>
+  <ul class="language-switcher">
+    <li>
+      <a href="index.html" lang="it" hreflang="it" aria-label="Italiano">
+        <span class="fi fi-it" aria-hidden="true"></span> IT
+      </a>
+    </li>
+    <li>
+      <a href="index-en.html" lang="en" hreflang="en" aria-label="English">
+        <span class="fi fi-gb" aria-hidden="true"></span> EN
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+.language-switcher {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.language-switcher li a {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Georgia", serif;
+  text-decoration: none;
+  background-color: #c7a17a;
+  color: #2c1810;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(44,24,16,0.1);
+  transition: all 0.25s ease;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.language-switcher li a:hover {
+  background-color: #e8d5c4;
+  color: #c7a17a;
+  transform: translateY(-2px);
+}
+
+.fi {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+</style>
+
+
+
+
+          
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
