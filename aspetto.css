@@ -203,7 +203,7 @@ html, body {
         /* ============================================
            HERO SECTION
            Prima impressione impattante con CTA
-           ============================================ */
+           ============================================ 
         .hero {
             background: linear-gradient(rgba(44, 24, 16, 0.7), rgba(44, 24, 16, 0.7)),
                         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23c7a17a" width="1200" height="600"/></svg>');
@@ -217,7 +217,20 @@ html, body {
             text-align: center;
             color: var(--text-light);
             padding: var(--spacing-lg) var(--spacing-sm);
-        }
+        } */
+.hero {
+    background-color: #fff; /* sfondo bianco */
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color); /* testo marrone scuro */
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+
+
 
         .hero-content h1 {
             color: var(--text-light);
