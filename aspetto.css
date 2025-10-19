@@ -25,6 +25,46 @@
 }
 
 
+/* ============================================
+            CSS per bottoni inglese e italiano
+           ============================================ */
+<style>
+.language-switcher {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.language-switcher li a {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Georgia", serif;
+  text-decoration: none;
+  background-color: #c7a17a;
+  color: #2c1810;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(44,24,16,0.1);
+  transition: all 0.25s ease;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.language-switcher li a:hover {
+  background-color: #e8d5c4;
+  color: #c7a17a;
+  transform: translateY(-2px);
+}
+
+.fi {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+</style>
+
 
 /* ============================================
            RESET E VARIABILI CSS
