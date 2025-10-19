@@ -1,3 +1,5 @@
+
+/*button per switch in inglese*/
 .language-switcher {
   list-style: none;
   display: flex;
@@ -21,32 +23,6 @@
   color: var(--secondary-color);
   outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
