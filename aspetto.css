@@ -91,6 +91,10 @@
     overflow-x: hidden;
          }
 
+.container, .hero, main, section {
+    background-color: var(--bg-light); /* Sfondo chiaro solo dentro questi elementi */
+}
+
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-heading);
