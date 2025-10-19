@@ -1,28 +1,5 @@
 
-/*button per switch in inglese*/
-.language-switcher {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-}
 
-.language-switcher li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: var(--transition);
-}
-
-.language-switcher li a:hover,
-.language-switcher li a:focus {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  outline: none;
-}
 
 
 /* ============================================
